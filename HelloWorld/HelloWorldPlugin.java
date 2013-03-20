@@ -11,8 +11,21 @@ import cytoscape.util.CytoscapeAction;
 public class HelloWorldPlugin extends CytoscapePlugin {
 
     public HelloWorldPlugin() {
-	String message = "Hello World!";
+	String message = "LOADED AND HELLO WORLD!";
 	System.out.println(message);
 	JOptionPane.showMessageDialog(Cytoscape.getDesktop(), message);
+	//	PluginMenuAction menuAction = new PluginMenuAction(this);
     }
+
+    //    public class PluginMenuAction extends CytoscapeAction {
+	
+    //	public PluginMenuAction(HelloWorldPlugin hwPlugin) {
+    //	    super("Hello World");
+    //	    setPreferredMenu("Plugins");
+    //	}
+
+    //	public void actionPerformed(ActionEvent e) {
+    //	    JOptionPane.showMessageDialog(Cytoscape.getDesktop(), "HELLO");
+    //	}
+    //  }
 }
